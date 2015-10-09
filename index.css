@@ -1,0 +1,54 @@
+
+body {
+    background: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg) center;
+}
+
+h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 48px;
+    margin-top: 80px;
+    margin-left: -50px;
+    text-align: center;
+    text-shadow: 10px 15px 10px MediumBlue;
+}
+
+#title1{
+    margin-left: 400px;
+    margin-top: -60px;
+    width: 700px;
+    height: 100px;
+    background: linear-gradient(to right, pink, white);
+}
+
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+#link-bar{
+    margin-left: 300px;
+    margin-top: -30px;
+    width: 900px;
+    height: 100px;
+    background: linear-gradient(to right, yellow, white);
+}
+#img-pie:hover{
+    animation-play-state: paused;
+}
+
+#img-pie{
+    width: 280px;
+    height: 250px;
+    margin-top: 20px;
+    position: relative;
+    animation: pie-move 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+}
+
+/*pie图片的动画*/
+@keyframes pie-move{
+    from{left:400px; opacity: 1;}
+    to{left:800px; opacity: 0.3;}
+}
