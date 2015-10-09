@@ -1,0 +1,151 @@
+
+body{
+    background: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg) repeat;
+    background-attachment:fixed;
+}
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    color: #A4A400;
+    letter-spacing: 0.2em;
+    font-family: Century Gothic, Futura, Verdana, sans-serif;
+}
+
+img{
+    display: inline-block;
+}
+
+#top-block{
+    margin-top: 30px;
+    width: 100%;
+    height: 30pt;
+    background-color: #F0F0F0;
+}
+p{
+    display: inline;
+    font-weight: 500;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+}
+
+#h1-h2{
+    margin-top: 430px;
+}
+
+#ingredients-block{
+    display:inline;
+}
+
+#ingredients-top-block{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    background-color: #F0F0F0;
+}
+
+#ingredients-ul{
+    margin-left: 10px;
+}
+h2{
+    text-decoration: underline;
+    text-align: left;
+    font-family: Century Gothic, Futura, Verdana, sans-serif;
+    font-size: 18pt;
+    font-weight: 100;
+    color: #A4A400;
+    letter-spacing: 0.2em;
+}
+
+li{
+     font-family: Century Gothic, Futura, Verdana, sans-serif;
+     font-weight: 500;
+     font-size: 11pt;
+}
+
+
+#h2-h3{
+    margin-top: 20px;
+}
+
+#directions-block{
+    margin-left: 30px;
+    display:inline;
+}
+
+#directions-top-block{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background-color: #F0F0F0;
+}
+
+#directions-ul-1{
+    margin-left: 40px;
+}
+#directions-ul-2{
+    margin-left: 40px;
+}
+
+ul{
+    list-style-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
+}
+
+#user-block{
+    display:inline;
+}
+
+#user-top-block{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    line-height:30px;
+    background-color: #F0F0F0;
+}
+
+
+#user-second-block{
+    margin-left:50px;
+    margin-right:30px;
+    width:90%;
+    height: 100px;
+    background-color: #FFFFC8;
+}
+
+#user-third-block{
+    margin-top: 40px;
+    margin-left:50px;
+    margin-right:30px;
+    width:800px;
+    height: 120px;
+    background-color: #FFFFC8;
+}
+
+h3{
+    font-family: Century Gothic, Futura, Verdana, sans-serif;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+#links-block{
+    display: inline;
+}
+
+#links-top-block{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    background-color: #F0F0F0;
+}
+
+#img-xhtml{
+    width: 100px;
+    height: 30px;
+}
+
+a{
+    color: #A4A400;
+    font-size: 20px;
+}
