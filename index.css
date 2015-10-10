@@ -12,6 +12,16 @@ h1{
     text-shadow: 10px 15px 10px MediumBlue;
 }
 
+h2{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: blue;
+    font-size: 48px;
+    margin-top: 80px;
+    margin-left: -50px;
+    text-align: center;
+    text-shadow: 10px 15px 10px green;
+}
+
 #title1{
     margin-left: 400px;
     margin-top: -60px;
@@ -20,18 +30,23 @@ h1{
     background: linear-gradient(to right, pink, white);
 }
 
-a:link {color:#FF0000;}    /* unvisited link */
-a:visited {color:#00FF00;} /* visited link */
-a:hover {color:#FF00FF;}   /* mouse over link */
-a:active {color:#0000FF;}  /* selected link */
-
 #link-bar{
     margin-left: 300px;
     margin-top: -30px;
+    position: relative;
     width: 900px;
     height: 100px;
     background: linear-gradient(to right, yellow, white);
+    animation: show 8s;
+    animation-timing-function: step-end;
 }
+/*Click提示框的出场动画*/
+@keyframes show{
+   from{margin-left: 2700px;}
+   to{margin-left: 300px;}
+}
+
+
 #img-pie:hover{
     animation-play-state: paused;
 }
@@ -41,14 +56,34 @@ a:active {color:#0000FF;}  /* selected link */
     height: 250px;
     margin-top: 20px;
     position: relative;
-    animation: pie-move 5s;
+    animation: pie-move 8s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
 }
-
 /*pie图片的动画*/
 @keyframes pie-move{
-    from{left:400px; opacity: 1;}
-    to{left:800px; opacity: 0.3;}
+    0%{opacity: 0.8; left: 300px;}
+    20%{opacity: 0.6; left: 400px;}
+    40%{opacity: 0.3; left: 500px;}
+    60%{opacity: 0.1; left: 600px;}
+    80%{opacity: 0; left: 700px;}
+    100%{opacity: 0; left: 800px;}
 }
+
+h1{
+    position: relative;
+    animation: letter-move 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+    animation-delay: 5s;
+}
+/*字体的动画*/
+@keyframes letter-move{
+    0%{color: pink;opacity:1;}
+    40%{transform:rotate(5deg);color: #C12AA1;opacity: 1;}
+    60%{transform:rotate(-6deg); color: blue;opacity: 1;}
+    80%{transform:rotate(3deg);color: green;opacity: 1;}
+    100%{transform:rotate(-4deg); color: orange;opacity: 1;}
+}
+
